@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["XDX", "XOX", "XXX"],
+    "key": {
+        "X": {
+            "item": "minecraft:cobbled_deepslate"
+        },
+        "D": {
+            "item": "minecraft:dropper"
+        },
+        "O": {
+            "item": "minecraft:observer"
+        }
+    },
+    "result": {
+        "item": "minecraft:knowledge_book"
+    }
+}

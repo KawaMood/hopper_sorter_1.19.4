@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "pk_hopper_sorter:hopper_sorter"
+            }
+        }
+    },
+    "rewards": {
+        "function": "pk_hopper_sorter:blocks/hopper_sorter/actions/craft/trigger"
+    }
+}

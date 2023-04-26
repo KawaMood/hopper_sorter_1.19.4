@@ -1,0 +1,65 @@
+{
+    "condition": "minecraft:alternative",
+    "terms": [
+        {
+            "condition": "minecraft:location_check",
+            "offsetX": -1,
+            "predicate": {
+                "block": {
+                    "blocks": ["minecraft:moving_piston"],
+                    "nbt": "{extending:0b}"
+                }
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "offsetX": 1,
+            "predicate": {
+                "block": {
+                    "blocks": ["minecraft:moving_piston"],
+                    "nbt": "{extending:0b}"
+                }
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "offsetY": -1,
+            "predicate": {
+                "block": {
+                    "blocks": ["minecraft:moving_piston"],
+                    "nbt": "{extending:0b}"
+                }
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "offsetY": 1,
+            "predicate": {
+                "block": {
+                    "blocks": ["minecraft:moving_piston"],
+                    "nbt": "{extending:0b}"
+                }
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "offsetZ": -1,
+            "predicate": {
+                "block": {
+                    "blocks": ["minecraft:moving_piston"],
+                    "nbt": "{extending:0b}"
+                }
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "offsetZ": 1,
+            "predicate": {
+                "block": {
+                    "blocks": ["minecraft:moving_piston"],
+                    "nbt": "{extending:0b}"
+                }
+            }
+        }
+    ]
+}
