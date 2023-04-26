@@ -7,7 +7,7 @@ scoreboard players add $next pk.custom_block.component.id 1
 # - Check what direction the block is facing
 function pk_hopper_sorter:blocks/hopper_sorter/place/score_set_facing_direction
 
-# Prepare data of the rack and store the rack in the blocks list
+# Prepare data of the hopper sorter and store the hopper sorter in the blocks list
 function pk_hopper_sorter:blocks/hopper_sorter/place/blocks_list/store
 
 # Set block
@@ -29,4 +29,4 @@ execute if score $facing pk.temp matches 2 positioned ~01.001 ~0.35 ~0.5 summon 
 execute if score $facing pk.temp matches 3 positioned ~-0.001 ~0.35 ~0.5 summon interaction run function pk_hopper_sorter:blocks/hopper_sorter/place/interaction_initialize
 
 # Debug logs
-execute if score $logs.datapack.ho_so pk.value matches 1 run tellraw @a[tag=pk.dev] [{"selector":"@a[tag=pk.temp.current.player,limit=1]","color": "gray"},{"text": " placed Hopper Sorter at ["},{"nbt":"Temp.Rack.x","storage":"pk.common:data"},{"text": ","},{"nbt":"Temp.Rack.y","storage":"pk.common:data"},{"text": ","},{"nbt":"Temp.Rack.z","storage":"pk.common:data"},{"text": "]"}]
+execute if score $logs.datapack.ho_so pk.value matches 1 run tellraw @a[tag=pk.dev] [{"selector":"@a[tag=pk.temp.current.player,limit=1]","color": "gray"},{"text": " placed Hopper Sorter at ["},{"nbt":"Temp.HopperSorter.x","storage":"pk.common:data"},{"text": ","},{"nbt":"Temp.HopperSorter.y","storage":"pk.common:data"},{"text": ","},{"nbt":"Temp.HopperSorter.z","storage":"pk.common:data"},{"text": "]"}]

@@ -5,6 +5,6 @@
         }
     },
     "rewards": {
-        "function": "pk_racks:packages/player_id/player_joined_first_time"
+        "function": "pk_hopper_sorter:packages/player_id/player_joined_first_time"
     }
 }

@@ -1,5 +1,5 @@
 #> pk_hopper_sorter:blocks/hopper_sorter/place/blocks_list/store
-# Store the Rack info from the controller
+# Store the HopperSorter info from the controller
 
 # Clear storage
 data remove storage pk.common:data Temp.HopperSorter

@@ -3,15 +3,15 @@
     "terms": [
         {
             "condition": "minecraft:reference",
-            "name": "pk_racks:location/dimension/-1"
+            "name": "pk_hopper_sorter:location/dimension/-1"
         },
         {
             "condition": "minecraft:reference",
-            "name": "pk_racks:location/dimension/0"
+            "name": "pk_hopper_sorter:location/dimension/0"
         },
         {
             "condition": "minecraft:reference",
-            "name": "pk_racks:location/dimension/1"
+            "name": "pk_hopper_sorter:location/dimension/1"
         }
     ]
 }
