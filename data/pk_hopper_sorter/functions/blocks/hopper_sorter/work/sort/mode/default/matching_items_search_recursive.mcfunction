@@ -1,4 +1,4 @@
-#> pk_hopper_sorter:blocks/hopper_sorter/work/sort/matching_items_search_recursive
+#> pk_hopper_sorter:blocks/hopper_sorter/work/sort/mode/default/matching_items_search_recursive
 
 # Keep only current item's id
 data remove storage pk.common:data Temp.Item
@@ -16,4 +16,4 @@ execute if score $compare.result pk.temp = $compare.length pk.temp run data modi
 # Recursive call
 data remove storage pk.common:data Temp.Search.Items[-1]
 scoreboard players remove $i pk.temp 1
-execute if score $i pk.temp matches 1.. run function pk_hopper_sorter:blocks/hopper_sorter/work/sort/matching_items_search_recursive
+execute if score $i pk.temp matches 1.. run function pk_hopper_sorter:blocks/hopper_sorter/work/sort/mode/default/matching_items_search_recursive

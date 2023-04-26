@@ -8,10 +8,14 @@ data modify storage pk.common:data Temp.Matching.Items set value []
 data modify storage pk.common:data Temp.Remaining.Items set value []
 data modify storage pk.common:data Temp.Backup.Remaining.Items set value []
 
+# Remove Slot data from the sorter items
+data remove storage pk.common:data Temp.Sorter.Items[{}].Slot
+
 # Search the matching items
 scoreboard players set $i pk.temp 0
 execute store result score $i pk.temp run data get storage pk.common:data Temp.Search.Items
-execute if score $i pk.temp matches 1.. run function pk_hopper_sorter:blocks/hopper_sorter/work/sort/matching_items_search_recursive
+execute if entity @s[tag=pk.mode.default] if score $i pk.temp matches 1.. run function pk_hopper_sorter:blocks/hopper_sorter/work/sort/mode/default/matching_items_search_recursive
+execute if entity @s[tag=pk.mode.strict] if score $i pk.temp matches 1.. run function pk_hopper_sorter:blocks/hopper_sorter/work/sort/mode/strict/matching_items_search_recursive
 
 # If matching items have been found
 scoreboard players set $i pk.temp 0
