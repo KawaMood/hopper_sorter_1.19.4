@@ -3,7 +3,7 @@
 
 # Remove all placed custom blocks
 # Will need to be searched within all dimensions
-data remove storage pk.common:data Temp
+data remove storage pk.common:data Temp.Array
 data modify storage pk.common:data Temp.Array.Search set value []
 # - Append Hopper Sorters
 data modify storage pk.common:data Temp.Array.Search append from storage pk.ho_so:data Blocks.HopperSorters[]
