@@ -1,0 +1,56 @@
+[
+    {
+        "condition": "minecraft:location_check",
+        "offsetY": 1,
+        "predicate": {
+            "block": {
+                "tag": "pk_hopper_sorter:valid_inputs"
+            }
+        }
+    },
+    {
+        "condition": "minecraft:inverted",
+        "term": {
+            "condition": "minecraft:location_check",
+            "offsetY": 1,
+            "predicate": {
+                "block": {
+                    "tag": "pk_hopper_sorter:chests",
+                    "state": {
+                        "enabled": "false"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "condition": "minecraft:inverted",
+        "term": {
+            "condition": "minecraft:location_check",
+            "offsetY": 1,
+            "predicate": {
+                "block": {
+                    "tag": "pk_hopper_sorter:chests",
+                    "state": {
+                        "type": "left"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "condition": "minecraft:inverted",
+        "term": {
+            "condition": "minecraft:location_check",
+            "offsetY": 1,
+            "predicate": {
+                "block": {
+                    "tag": "pk_hopper_sorter:chests",
+                    "state": {
+                        "type": "right"
+                    }
+                }
+            }
+        }
+    }
+]

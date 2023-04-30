@@ -45,10 +45,8 @@ execute unless data storage pk.ho_so:data Blocks.HopperSorters[{}] run data modi
 # Define objectives that are common to each PK data pack:
 # - pk.temp only concerns temp values that can be cleared at any time without risks.
 # - pk.value is used for fixed values and variable settings, and won't be cleared on uninstallation until there is no PK data pack anymore.
-# - pk.version is used to store the version entities have been placed from or updated with
 scoreboard objectives add pk.temp dummy
 scoreboard objectives add pk.value dummy
-scoreboard objectives add pk.version dummy
 scoreboard objectives add pk.custom_block.component.id dummy
 scoreboard objectives add pk.custom_block.interaction.id dummy
 scoreboard objectives add pk.crafted.knowledge_book crafted:knowledge_book

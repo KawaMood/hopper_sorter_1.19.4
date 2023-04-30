@@ -5,7 +5,7 @@
 data remove storage pk.common:data Temp.HopperSorter
 
 # Set version
-execute store result storage pk.common:data Temp.HopperSorter.version int 1 run scoreboard players get $pk.ho_so.version pk.value
+execute store result storage pk.common:data Temp.HopperSorter.Version int 1 run scoreboard players get $pk.ho_so.version pk.value
 
 # Set component score id
 execute store result storage pk.common:data Temp.HopperSorter.id int 1 run scoreboard players get $next pk.custom_block.component.id

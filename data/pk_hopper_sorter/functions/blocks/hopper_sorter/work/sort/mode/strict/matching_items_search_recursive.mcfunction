@@ -4,8 +4,8 @@
 data remove storage pk.common:data Temp.Item
 data modify storage pk.common:data Temp.Item set from storage pk.common:data Temp.Search.Items[-1]
 
-# Remove Slot
-data remove storage pk.common:data Temp.Item.Slot
+# Remove the ignored data
+function pk_hopper_sorter:blocks/hopper_sorter/work/sort/mode/strict/matching_items_ignored_data
 
 # Check if the current item matches an item of the sorter items list
 data modify storage pk.common:data Temp.Compare set from storage pk.common:data Temp.Sorter.Items

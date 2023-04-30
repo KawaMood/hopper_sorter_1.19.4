@@ -5,10 +5,10 @@
 # Will need to be searched within all dimensions
 data remove storage pk.common:data Temp.Array
 data modify storage pk.common:data Temp.Array.Search set value []
-# - Append Hopper Sorters
+# - Append Custom Blocks
 data modify storage pk.common:data Temp.Array.Search append from storage pk.ho_so:data Blocks.HopperSorters[]
-# - Forceload chunks where custom blocks are, then wait 1 second for the chunk to be fully loaded
-execute if data storage pk.common:data Temp.Array.Search[{}] run function pk_hopper_sorter:base/uninstall/forceload_custom_blocks_chunks
+# - Forceload chunks where custom blocks are, then wait for the chunk to be fully loaded
+execute if data storage pk.common:data Temp.Array.Search[{}] run function pk_hopper_sorter:base/uninstall/marker_summon_recursive
 
-# 1 second after
+# Delayed process, assuming the chunk is fully loaded after the delay
 schedule function pk_hopper_sorter:base/uninstall/after_1s 1s

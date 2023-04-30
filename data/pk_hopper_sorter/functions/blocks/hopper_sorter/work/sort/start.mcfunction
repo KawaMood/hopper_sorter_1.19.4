@@ -8,8 +8,8 @@ data modify storage pk.common:data Temp.Matching.Items set value []
 data modify storage pk.common:data Temp.Remaining.Items set value []
 data modify storage pk.common:data Temp.Backup.Remaining.Items set value []
 
-# Remove Slot data from the sorter items
-data remove storage pk.common:data Temp.Sorter.Items[{}].Slot
+# Remove ignored data from the sorter items
+function pk_hopper_sorter:blocks/hopper_sorter/work/sort/sorter_items_ignored_data
 
 # Search the matching items
 scoreboard players set $i pk.temp 0

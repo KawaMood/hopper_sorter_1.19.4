@@ -2,7 +2,6 @@
 
 # Set component id score to link entities
 scoreboard players operation @s pk.custom_block.component.id = $next pk.custom_block.component.id
-scoreboard players operation @s pk.version = $pk.ho_so.version pk.value
 
 # Set tags
 tag @s add pk.custom_block
